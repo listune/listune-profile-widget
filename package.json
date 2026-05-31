@@ -20,8 +20,19 @@
     "music",
     "profile"
   ],
-  "author": "L RMN",
+  "author": {
+    "name": "L RMN",
+    "url": "https://listune.app"
+  },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/listune/listune-profile-widget.git"
+  },
+  "bugs": {
+    "url": "https://github.com/listune/listune-profile-widget/issues"
+  },
+  "homepage": "https://github.com/listune/listune-profile-widget#readme",
   "dependencies": {
     "discord.js": "^14.26.4",
     "dotenv": "^17.4.2"
