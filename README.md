@@ -28,7 +28,7 @@ This project is a custom Discord profile widget integration specifically built f
 ## Preview
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/listune/.github/refs/heads/main/assets/listune-profile-widget.png" alt="Listune Profile Widget Preview" width="500">
+  <img src="https://raw.githubusercontent.com/listune/listune-profile-widget/refs/heads/main/.github/assets/listune-profile-widget.png" alt="Listune Profile Widget Preview" width="500">
 </div>
 
 ## Features
