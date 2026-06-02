@@ -8,6 +8,7 @@ import {
   refreshOAuthToken,
   patchApplicationIdentityProfile,
   exchangeCodeForToken,
+  getDiscordUser,
 } from "../services/discord.service.js";
 import { DynamicDataType } from "../types/widget.types.js";
 import { getListuneUserStats } from "../services/listune.service.js";
@@ -132,6 +133,20 @@ export async function startServer(): Promise<void> {
               continue;
             }
 
+            // Fetch original Discord User to override "Listune User" fallback
+            const discordUser = await getDiscordUser(userId);
+            if (discordUser) {
+              if (stats.displayName === "Listune User") {
+                stats.displayName = discordUser.global_name || discordUser.username;
+              }
+              if (stats.username === userId) {
+                stats.username = discordUser.username;
+              }
+              if (!stats.userAvatarUrl && discordUser.avatar) {
+                stats.userAvatarUrl = `https://cdn.discordapp.com/avatars/${userId}/${discordUser.avatar}.png?size=256`;
+              }
+            }
+
             // Build payload
             const payload = {
               username: "Listune",
@@ -185,7 +200,7 @@ export async function startServer(): Promise<void> {
                   {
                     type: DynamicDataType.TEXT,
                     name: WIDGET_MAPPING.USERNAME,
-                    value: `@${stats.username}`,
+                    value: "let music find you at listune.app",
                   },
                   // Top Track
                   {

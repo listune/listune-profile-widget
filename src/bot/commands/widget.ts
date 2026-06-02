@@ -147,7 +147,7 @@ function buildWidgetPayload(
         {
           type: DynamicDataType.TEXT,
           name: WIDGET_MAPPING.USERNAME,
-          value: `@${stats.username}`,
+          value: "let music find you at listune.app",
         },
         // Top Track
         {

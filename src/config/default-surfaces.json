@@ -1,0 +1,214 @@
+{
+  "widget_bottom": {
+    "layout": "widget_bottom_stats",
+    "components": {
+      "stat_1": {
+        "fields": {
+          "label": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "f0l"
+          },
+          "value": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "f0"
+          },
+          "icon": {
+            "value_type": "data",
+            "presentation_type": "image",
+            "value": "f0i"
+          }
+        }
+      },
+      "stat_2": {
+        "fields": {
+          "label": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "f1l"
+          },
+          "value": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "f1"
+          },
+          "icon": {
+            "value_type": "data",
+            "presentation_type": "image",
+            "value": "f1i"
+          }
+        }
+      },
+      "stat_3": {
+        "fields": {
+          "label": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "f2l"
+          },
+          "value": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "f2"
+          },
+          "icon": {
+            "value_type": "data",
+            "presentation_type": "image",
+            "value": "f2i"
+          }
+        }
+      },
+      "stat_4": {
+        "fields": {
+          "label": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "f3l"
+          },
+          "value": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "f3"
+          },
+          "icon": {
+            "value_type": "data",
+            "presentation_type": "image",
+            "value": "f3i"
+          }
+        }
+      },
+      "stat_5": {
+        "fields": {
+          "label": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "f4l"
+          },
+          "value": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "f4"
+          },
+          "icon": {
+            "value_type": "data",
+            "presentation_type": "image",
+            "value": "f4i"
+          }
+        }
+      },
+      "stat_6": {
+        "fields": {
+          "label": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "f5l"
+          },
+          "value": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "f5"
+          },
+          "icon": {
+            "value_type": "data",
+            "presentation_type": "image",
+            "value": "f5i"
+          }
+        }
+      }
+    }
+  },
+  "mini_profile": {
+    "layout": "mini_profile_hero_stat",
+    "components": {
+      "stat": {
+        "fields": {
+          "text": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "mini_text"
+          },
+          "icon": {
+            "value_type": "data",
+            "presentation_type": "image",
+            "value": "mini_icon"
+          }
+        }
+      },
+      "hero_image": {
+        "fields": {
+          "image": {
+            "value_type": "data",
+            "presentation_type": "image",
+            "value": "primary_image"
+          }
+        }
+      }
+    }
+  },
+  "widget_top": {
+    "layout": "widget_top_hero",
+    "components": {
+      "title": {
+        "fields": {
+          "text": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "name"
+          }
+        }
+      },
+      "subtitle_1": {
+        "fields": {
+          "text": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "sub01"
+          }
+        }
+      },
+      "hero_image": {
+        "fields": {
+          "image": {
+            "value_type": "data",
+            "presentation_type": "image",
+            "value": "primary_image"
+          }
+        }
+      }
+    }
+  },
+  "add_widget_preview": {
+    "layout": "add_widget_preview_hero",
+    "components": {
+      "hero_image": {
+        "fields": {
+          "image": {
+            "value_type": "data",
+            "presentation_type": "image",
+            "value": "primary_image"
+          }
+        }
+      }
+    }
+  },
+  "activity_accessory": {
+    "layout": "activity_accessory_stat",
+    "components": {
+      "stat": {
+        "fields": {
+          "text": {
+            "value_type": "data",
+            "presentation_type": "text",
+            "value": "activity_text"
+          },
+          "icon": {
+            "value_type": "data",
+            "presentation_type": "image",
+            "value": "activity_icon"
+          }
+        }
+      }
+    }
+  }
+}

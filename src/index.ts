@@ -4,6 +4,7 @@ dotenv.config();
 import { initJsonStore } from "./database/store.js";
 import { startServer } from "./api/server.js";
 import { startBot } from "./bot/index.js";
+import { ensureWidgetConfigExists } from "./services/discord.service.js";
 
 async function main() {
   console.log("─────────────────────────────────────────");
@@ -21,6 +22,12 @@ async function main() {
     await startServer();
   } catch (err) {
     console.error("[Init] Failed to start HTTP server:", err);
+  }
+
+  try {
+    await ensureWidgetConfigExists();
+  } catch (err) {
+    console.error("[Init] Failed to ensure widget configuration:", err);
   }
 
   try {
